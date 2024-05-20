@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.background-2 {
+    background-image: url('img/Baground\ 2.png');
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 58%; /* Mengatur lebar maksimum kontainer */
+    text-align: center;
+    position: relative; /* Mengatur posisi kontainer relatif untuk mengatur posisi teks dan ikon */
+}
+
+.container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.icon-container {
+    position: absolute; /* Mengatur posisi absolut untuk ikon dan teks di dalam kontainer */
+    top: 50%; /* Menggeser ke atas sejauh 50% dari atas kontainer */
+    left: 50%; /* Menggeser ke kanan sejauh 50% dari kiri kontainer */
+    transform: translate(-50%, -50%); /* Menggeser kembali sejauh setengah dari lebar dan tinggi kontainer */
+    text-align: center; /* Mengatur teks agar berada di tengah */
+}
+
+.icon {
+    width: 35%; /* Ubah ukuran gambar sesuai kebutuhan */
+    height: 35%; /* Ubah ukuran gambar sesuai kebutuhan */
+    animation: grow-shrink 2s ease-in-out infinite; /* Mengatur animasi */
+}
+
+@keyframes grow-shrink {
+    0% {
+        transform: scale(1); /* Ukuran normal pada awal animasi */
+    }
+    50% {
+        transform: scale(1.5); /* Membesar hingga 1.5 kali ukuran asli */
+    }
+    100% {
+        transform: scale(1); /* Kembali ke ukuran normal */
+    }
+}
+
+.message {
+    font-size: 25px; /* Ukuran font pesan */
+    font-weight: 600; /* Ketebalan font */
+    color: #000000; /* Warna teks */
+    margin-top: -5px; /* Jarak atas teks dari ikon */
+    animation: grow-shrink 2s ease-in-out infinite; /* Animasi */
+}
+
+/* Animasi grow dan shrink */
+@keyframes grow-shrink {
+    0%, 100% { transform: scale(1); } /* Awal dan akhir: normal */
+    50% { transform: scale(1.1); } /* Tengah: diperbesar */
+}
+
+.back-to-login {
+    text-decoration: none;
+    color: #000000; /* Warna biru sesuai kebutuhan */
+    font-size: 12px;
+}
+
+.Signin-text {
+    color: #007bff; /* Warna putih sesuai kebutuhan */
+    font-size: 12px;
+}
+
+
+

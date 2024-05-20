@@ -1,0 +1,158 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  z-index: 1;
+  background: linear-gradient(-45deg, #6aebbe, #03624c, #d0fbe7, #0abf8c);
+  background-size: 400% 400%;
+  width: 100%;
+  height: 100vh;
+  animation: animate 15s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gambar img {
+  position: absolute;
+  width: 20%;
+  top: 9cm;
+  left: 23cm;
+}
+
+.container {
+  margin-top: 1cm;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container-form {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  background-image: linear-gradient(#009b73, #2fd8a2, #6aebbe, #ebfef6);
+  width: 60%;
+  display: flex;
+  justify-content: end;
+}
+
+.welcome h1 {
+  color: white;
+  margin-right: 30px;
+  padding-left: 50px;
+  padding-top: 100px;
+  text-align: end;
+}
+
+.biodata h4 {
+  color: white;
+  margin-right: 30px;
+  padding-left: 50px;
+  padding-top: 50px;
+  text-align: end;
+}
+
+form {
+  background-color: #ffffff;
+  width: 140%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding-top: 60px;
+}
+
+.biodata {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.biodata h1 {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+form label {
+  margin-bottom: 5px;
+}
+form input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+}
+
+.remfp {
+  padding-top: 0px;
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+}
+
+.checkbox {
+  align-items: center;
+}
+
+.remfp a {
+  color: #4f4f4f;
+  text-decoration: none;
+}
+
+button {
+  width: 60%;
+  text-decoration: none;
+  border-radius: 13px;
+  font-weight: bold;
+  font-size: 16px;
+  height: 50px;
+  margin: 20px 20px;
+  border-style: none;
+  background-color: #007c5f;
+  color: #ffffff;
+}
+
+button a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: #ffce39;
+  color: #ffffff;
+}
+
+.signup {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 100px;
+}
+
+.signup p {
+  margin-right: 5px;
+}
+
+.signup a {
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

@@ -1,0 +1,440 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* navbar */
+.navbar {
+  background-color: #ffffff;
+  height: 10vh;
+  box-shadow: 0px 4px 8px rgba(3, 98, 76, 0.4);
+}
+
+.navbar-nav {
+  display: flex;
+  padding-left: 200px;
+  justify-content: center; /* Memusatkan item-menu */
+  flex-grow: 1; /* Biarkan item-menu membesar sesuai kebutuhan */
+}
+
+.navbar-nav .nav-item {
+  margin: 0 10px; /* Jarak antar item-menu */
+}
+
+.form-inline {
+  display: flex;
+  justify-content: flex-end; /* Memindahkan form pencarian ke kanan */
+  flex-grow: 1; /* Biarkan form pencarian membesar sesuai kebutuhan */
+}
+
+.search-bar {
+  margin-left: 1px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* Sembunyikan ikon X di dalam kolom pencarian */
+input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+.search-bar input[type="search"] {
+  width: 200px;
+  padding: 8px 30px 8px 10px;
+  border-radius: 10px;
+  border: none;
+  padding-left: 40px;
+  background-color: #03624c;
+  color: #ffffff;
+}
+
+.search-bar input[type="search"]::placeholder {
+  color: #ffffff; /* Ubah warna teks placeholder menjadi merah */
+}
+
+.search-bar i {
+  color: #ffffff;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.button .btn {
+  background-color: #03624c;
+  color: #ffffff;
+  font-size: 15px;
+  margin: 20px;
+  border: none; /* Menghapus border button */
+  padding: 8px 10px; /* Padding button */
+  border-radius: 10px; /* Border radius button */
+  cursor: pointer; /* Mengubah kursor menjadi pointer saat dihover */
+}
+
+.button .btn:hover {
+  background-color: #accbc4; /* Warna latar button saat dihover */
+}
+
+/* Donasi */
+
+/* CSS */
+.donation-section {
+  display: flex; /* Menggunakan flexbox untuk mengatur layout */
+  align-items: stretch; /* Memastikan kedua bagian memiliki tinggi yang sama */
+  justify-content: space-between;
+  margin-top: 80px; /* Memberikan ruang atas untuk konten */
+  width: 100%; /* Lebarkan sesuai dengan lebar parent */
+  height: 500px; /* Mengatur tinggi dalam satuan piksel */
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
+  margin-top: 50px;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #000000;
+  margin-right: 150px;
+  margin-top: 16px;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
+  margin-right: 150px;
+  margin-top: 20px;
+}
+
+.left-section {
+  flex: 2; /* Bagian kiri akan memiliki lebar 2 kali lipat dari bagian kanan */
+  background-color: rgba(3, 98, 76, 0.6); /* Warna latar belakang untuk bagian kiri */
+  padding: 60px; /* Berikan ruang di sekitar konten kiri */
+}
+
+.right-section {
+  flex: 1; /* Bagian kanan akan memiliki lebar 1 */
+  background-color: rgba(172, 203, 196, 0.7); /* Warna dengan opacity 50% */ /* Warna latar belakang untuk bagian kanan */
+  text-align: right; /* Posisikan teks di bagian kanan */
+  padding: 10px; /* Berikan ruang di sekitar konten kanan */
+  display: flex;
+  justify-content: center; /* Menengahkan gambar secara horizontal */
+  align-items: center; /* Menengahkan gambar secara vertikal */
+}
+
+.donation-info {
+  margin: 0; /* Menghapus margin bawaan dari elemen heading dan paragraph */
+  color: #333; /* Warna teks untuk konten kiri */
+}
+
+.donate-button {
+  padding: 10px 20px; /* Berikan ruang di sekitar tombol */
+  font-size: 16px; /* Ukuran font tombol */
+  background-color: #03624c; /* Warna latar belakang tombol */
+  color: #ffffff; /* Warna teks tombol */
+  border: none; /* Hapus garis tepi tombol */
+  border-radius: 15px; /* Berikan sudut bulat pada tombol */
+  cursor: pointer; /* Ubah kursor menjadi pointer saat digulir di atas tombol */
+  margin-top: 50px;
+}
+
+.donate-button:hover {
+  color: #ffffff;
+  background-color: #ffce39; /* Warna latar button saat dihover */
+}
+
+.donation-image {
+  margin-top: -20px;
+  margin-right: 250px;
+  width: 450px; /* Atur lebar gambar */
+  height: auto; /* Biarkan tinggi gambar menyesuaikan proporsi aspek */
+  max-width: 200%; /* Pastikan gambar tidak melebihi lebar parent */
+  border-radius: 15px; /* Berikan sudut bulat pada gambar */
+}
+
+.image-text {
+  display: flex; /* Menggunakan flexbox untuk mengatur layout */
+  justify-content: center; /* Membuat teks berada di tengah secara horizontal */
+  align-items: center; /* Membuat teks berada di tengah secara vertikal */
+  position: absolute; /* Teks diberi posisi absolut */
+  top: 184px; /* Atur jarak teks dari atas */
+  right: 88px; /* Atur jarak teks dari kiri */
+  font-size: 24px; /* Atur ukuran font teks */
+  color: rgb(255, 255, 255); /* Atur warna teks */
+  background-color: rgba(172, 203, 196, 0.5);
+  padding: 10px;
+  width: 37.1%;
+  border-radius: 15px;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+  .donation-section {
+    flex-direction: column;
+  }
+
+  .left-section,
+  .right-section {
+    padding: 10px;
+  }
+
+  .donation-info h2 {
+    font-size: 1.5em;
+  }
+
+  .donation-info p {
+    font-size: 1em;
+  }
+
+  .donation-image {
+    width: 100%; /* Lebar penuh untuk gambar pada layar kecil */
+    max-width: 300px; /* Lebar maksimum untuk gambar */
+  }
+}
+
+.information-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh; /* Sesuaikan tinggi sesuai kebutuhan */
+  background-color: #03624c; /* Warna latar belakang kontainer */
+  position: relative;
+}
+
+.information-section::after {
+  content: ""; /* Menambahkan konten menggunakan pseudo-element */
+  position: absolute; /* Mengatur posisi absolut */
+  top: 50%; /* Mengatur posisi vertikal pada tengah */
+  left: 50%; /* Mengatur posisi horizontal pada tengah */
+  transform: translate(-50%, -50%); /* Menggeser ke tengah */
+  width: 2px; /* Lebar garis */
+  height: 100%; /* Tinggi garis */
+  background-color: #ffffff; /* Warna garis */
+}
+
+.left-info {
+  text-align: left;
+  padding-left: 80px;
+  float: left;
+  margin-right: 180px;
+}
+
+.left-info h1 {
+  font-size: 50px;
+  margin-top: 20px; /* Menaikkan konten */
+  color: #ffffff;
+}
+
+.left-info h2 {
+  font-size: 18px;
+  margin-top: 10px; /* Menaikkan konten */
+  color: #ffffff;
+}
+
+.left-info h3 {
+  font-size: 28px;
+  margin-top: 10px; /* Menaikkan konten */
+  color: #ffffff;
+}
+
+.right-info {
+  text-align: left;
+  padding: 40px;
+  float: left;
+  margin-right: 80px;
+}
+
+.right-info h1 {
+  font-size: 50px;
+  margin-top: 10px; /* Menaikkan konten */
+  bottom: 50px;
+  color: #ffffff;
+}
+
+.right-info h2 {
+  font-size: 18px;
+  margin-top: 10px; /* Menaikkan konten */
+  color: #ffffff;
+}
+
+.right-info h3 {
+  font-size: 28px;
+  margin-top: 10px; /* Menaikkan konten */
+  color: #ffffff;
+}
+
+/* Program */
+.title {
+  position: relative;
+  display: flex;
+  justify-content: center; /* Menengahkan secara horizontal */
+  align-items: center; /* Menengahkan secara vertikal */
+  height: 100px; /* Sesuaikan tinggi container sesuai kebutuhan */
+}
+
+.title h1 {
+  margin-top: 50px;
+  font-size: 40px; /* Ubah ukuran font */
+  font-weight: 600; /* Gunakan semi-bold (misalnya 600 atau 700) */
+  text-align: center;
+}
+
+.see-all {
+  font-size: 18px; /* Sesuaikan ukuran font sesuai kebutuhan */
+  color: #000000; /* Sesuaikan warna teks sesuai kebutuhan */
+  text-decoration: none; /* Membuat teks terlihat seperti tautan */
+  cursor: pointer; /* Menjadikan kursor menjadi tangan saat mengarah ke teks */
+  position: absolute; /* Gunakan position absolute */
+  top: 0; /* Geser ke atas */
+  right: 160px; /* Geser ke kanan */
+  margin-top: 120px; /* Jarak antara judul dan teks "See All" */
+}
+
+.see-all a {
+  color: #000000;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  margin-top: 60px;
+  margin-bottom: 70px; /* Atur jarak antara setiap kartu */
+  margin-right: 15px; /* Atur jarak kanan kartu */
+  margin-left: 15px; /* Atur jarak kiri kartu */
+  background-color: rgba(172, 203, 196, 0.9);
+  border-radius: 15px;
+}
+
+.card-title {
+  margin-bottom: 50px; /* Sesuaikan sesuai kebutuhan */
+}
+
+.btn-primary {
+  background-color: #03624c; /* Sesuaikan warna tombol */
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+/* On Going */
+.ongoing-projects {
+  text-align: center;
+}
+
+.ongoing-projects h2 {
+  margin-bottom: 50px;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  padding-left: 170px;
+}
+
+.image-container {
+  display: flex; /* Use flexbox to align images */
+  justify-content: center; /* Center-align the images horizontally */
+}
+
+.image-container img {
+  max-width: 100%; /* Ensure images resize proportionally */
+  margin: 0 5px; /* Add spacing of 10 pixels on the left and right of each image */
+  margin-bottom: 100px;
+}
+
+/* footer */
+#footer {
+  background-color: #03624c;
+  position: relative;
+  margin: auto;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+#footer hr {
+  color: #c5d215;
+}
+
+#footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1170px;
+  margin: auto;
+  padding-top: 30px;
+}
+
+#footer .footer-col {
+  flex: 1;
+  margin-right: 20px;
+}
+
+#footer .footer-col img {
+  margin-bottom: 30px;
+  margin-right: 10px;
+}
+
+#footer .footer-col .footer {
+  width: 200px; /* Menetapkan lebar gambar footer */
+  height: auto; /* Mengatur ketinggian gambar agar sesuai dengan lebarnya */
+}
+
+#footer .footer-col .social-links a i {
+  font-size: 18px;
+  color: #ffffff;
+  margin: 10px;
+}
+
+#footer .footer-col {
+  margin-left: 30px;
+}
+
+#footer .footer-col .social-links li {
+  list-style-type: none; /* Menghapus gaya daftar bawaan */
+  margin-bottom: 10px; /* Mengatur jarak antara setiap tautan */
+}
+
+#footer .footer-col .social-links li a {
+  text-decoration: none; /* Menghapus garis bawah dari tautan */
+  color: #ffffff; /* Warna teks tautan */
+  font-size: 18px;
+}
+
+#footer .footer-col .social-links span {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+#footer p {
+  text-align: center;
+  color: #ffffff;
+}
+
+#footer .footer-col .social-links a:hover i {
+  color: #accbc4; /* Warna latar button saat dihover */
+  transform: scale(1.1); /* Slightly enlarge the icon */
+}
+
+#footer .footer-col .social-links li:hover i {
+  color: #accbc4; /* Warna latar button saat dihover */
+  transform: scale(1.1); /* Slightly enlarge the icon */
+}
+
+#footer .footer-col .social-links a:hover i {
+  color: #accbc4; /* Warna latar button saat dihover */
+  transform: scale(1.1); /* Slightly enlarge the icon */
+}
+
+#footer .footer-col .social-links li:hover a {
+  color: #accbc4; /* Warna latar button saat dihover */
+  transform: scale(1.1); /* Slightly enlarge the icon */
+}
+
+#footer .footer-col .social-links li:hover span {
+  color: #accbc4; /* Warna latar button saat dihover */
+  transform: scale(1.1); /* Slightly enlarge the icon */
+}
